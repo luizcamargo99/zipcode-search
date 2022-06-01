@@ -8,7 +8,6 @@ function clickSearchCep () {
     }
 }
 
-
 function validateFieldIsBlank () {
     const cep = document.getElementById('cep');
 
@@ -50,8 +49,6 @@ async function handleResponseApi (responseApi) {
     document.getElementById('cityResult').innerHTML = cepObject.localidade;
     document.getElementById('ufResult').innerHTML = cepObject.uf;
 
-
     resultDiv.style.display = 'flex';
     document.getElementById('invalid-cep').style.display = 'none';
-
 }
