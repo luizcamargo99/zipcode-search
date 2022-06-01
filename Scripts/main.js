@@ -4,10 +4,7 @@ let cepObject = {};
 function clickSearchCep () {
     const isValid = validateFieldIsBlank();
     if (isValid) {
-        const validaCep = /^[0-9]{8}$/;        
-        if(validaCep.test(document.getElementById('cep').value)) {
-            searchInApi();
-        }        
+        searchInApi();      
     }
 }
 
