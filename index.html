@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Styles/global.css">
+    <script src="./Scripts/main.js"></script>
+    <title>Consultar CEP</title>
+</head>
+<body>
+    <main>
+            <span id="title">Consultar CEP</span>
+            <div class="row" id="search-content">
+                <input type="text" placeholder="Digite seu CEP" maxlength="8" id="cep" oninput="validateFieldIsBlank()">
+                <button onclick="clickSearchCep()">Pesquisar</button>
+                <span id="invalid-cep">CEP inválido </span>
+            </div>
+            <span id="number-only">*somente números</span>
+       
+        <div id="result" class="column">
+            <div class="row">
+                <span>Logradouro:</span>
+                <span id="streetResult"></span>
+            </div>
+
+            <div class="row">
+                <span>Bairro:</span>
+                <span id="districtResult"></span>
+            </div>
+
+            <div class="row">
+                <span>Cidade:</span>
+                <span id="cityResult"></span>
+            </div>
+
+            <div class="row">
+                <span>UF:</span>
+                <span id="ufResult"></span>
+            </div>
+        </div>
+    </main>
+
+
+</body>
+</html>
